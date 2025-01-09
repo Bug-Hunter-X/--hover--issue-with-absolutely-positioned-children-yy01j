@@ -1,0 +1,5 @@
+To fix this, ensure that the absolutely positioned children don't overlap the parent element in a way that blocks the hover event. You can achieve this by:
+
+1. **Adjusting the `z-index`:** Give the parent a higher `z-index` than its absolutely positioned children.
+2. **Modifying the positioning:**  Change the positioning of the children so they don't overlap the parent in such a way that interferes with the hover event.
+3. **Using `pointer-events`:** On the absolutely positioned children, set `pointer-events: none;` to allow mouse events to pass through to the parent.
